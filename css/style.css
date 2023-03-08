@@ -16,13 +16,15 @@ body {
 }
 .pacmanmotion{
     position: relative;
-    animation: pacman 6s infinite;
+    animation: pacman 15s infinite;
+    top: 70px;
+    left: -40px;
 }
 @keyframes pacman {
-    0% {top: 15px; left: 0px;}
-    5% {top: 15px; left: 155px;}
-    8% {top: 75px;}
-    100% {top: 100px;}
+     0% {top: 70px; left: -40px;}
+    5% {top: 330px; left: 80px;}
+   /* 8% {top: 0px; left: 0px;}
+    100% {top: 100px;}*/
 } 
 .pilo {
     display: flex;
@@ -41,17 +43,22 @@ body {
     }
     .fondo {
         background-image: url(../img/fondo.jpg);
-        background-size: cover;
-        width: 400vw;
-        height: 100vh;
+        background-size: 100%;
+        height: 70vh;
         background-repeat: no-repeat;
-    
     }
-    @keyframes pacman {
+    .pacmanmotion{
+        width: 20px;
+        position: relative;
+        animation: pacman 15s infinite;
+        top: 70px;
+        left: -40px;
+    }
+    /*@keyframes pacman {
         0% {top: 15px; left: 0px;}
         5% {top: 15px; left: 155px;}
         8% {top: 75px;}
         100% {top: 100px;}
         
-    }
+    }*/
 }
