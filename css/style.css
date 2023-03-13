@@ -16,16 +16,20 @@ body {
 }
 .pacmanmotion{
     position: relative;
-    animation: pacman 15s infinite;
+    animation: pacman 6s infinite;
     top: 70px;
     left: -40px;
 }
 @keyframes pacman {
-     0% {top: 70px; left: -40px;}
-    5% {top: 330px; left: 80px;}
-   /* 8% {top: 0px; left: 0px;}
-    100% {top: 100px;}*/
-} 
+    0% {top: 70px; left: -40px;}
+    25% {top: 550px; left: -40px;}
+    35% {top: 550px; left: 130px;}
+    45% {top: 430px; left: 130px;}
+    55% {top: 430px; left: 700px;}
+    65% {top: 190px; left: 700px;}
+    75% {top: 190px; left: 500px;}
+    100% {top: 310px; left: 500px;}
+}
 .pilo {
     display: flex;
     justify-content: center;
@@ -50,15 +54,42 @@ body {
     .pacmanmotion{
         width: 20px;
         position: relative;
-        animation: pacman 15s infinite;
-        top: 70px;
-        left: -40px;
+        animation: pacman 6s infinite;
+        top: 2px;
+        left: -85px;
     }
-    /*@keyframes pacman {
-        0% {top: 15px; left: 0px;}
-        5% {top: 15px; left: 155px;}
-        8% {top: 75px;}
-        100% {top: 100px;}
-        
-    }*/
+    @keyframes pacman {
+        0% {top: 2px; left: -85px;}
+        25% {top: 110px; left: -85px;}
+        35% {top: 110px; left: 55px;}
+        45% {top: 225px; left: 55px;}
+        55% {top: 225px; left: 255px;}
+        100% {top: 50px; left: 255px;}
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    body {
+        background-color: coral;
+    }
+    .fondo {
+        background-image: url(../img/fondo.jpg);
+        background-size: 100%;
+        height: 70vh;
+        background-repeat: no-repeat;
+    }
+    .pacmanmotion{
+        width: 30px;
+        position: relative;
+        animation: pacman 6s infinite;
+        top: 5px;
+        left: -75px;
+    }
+    @keyframes pacman {
+        0% {top: 5px; left: -75px;}
+        25% {top: 140px; left: -75px;}
+        35% {top: 140px; left: 90px;}
+       45% {top: 215px; left: 90px;}
+         55% {top: 215px; left: 330px;}
+        100% {top: 70px; left: 330px;}
+    }
 }
